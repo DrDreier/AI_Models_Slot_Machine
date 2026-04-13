@@ -4,18 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>AI Models Slot Machine</title>
+    <title>🎰 AI Models Slot Machine</title>
 </head>
 <body>
-    <h1>AI Models Slot Machine</h1>
+    <h1>🤖 AI SLOT MACHINE 🎰</h1>
+    
     <div class="slot-machine">
-        <div class="reels">
-            <div class="reel" id="reel1"></div>
-            <div class="reel" id="reel2"></div>
-            <div class="reel" id="reel3"></div>
+        <!-- Display Board -->
+        <div class="display-board">
+            <div class="display-item">
+                <span class="display-label">💰 Balance:</span>
+                <span class="display-value" id="balance">100</span>
+            </div>
+            <div class="display-item">
+                <span class="display-label">🎲 Current Bet:</span>
+                <span class="display-value" id="current-bet">5</span>
+            </div>
+            <div class="display-item">
+                <span class="display-label">✨ Last Win:</span>
+                <span class="display-value" id="last-win">0</span>
+            </div>
         </div>
-        <button id="spin-button">Spin</button>
+
+        <!-- Reels Container -->
+        <div class="reels-container">
+            <div class="payline"></div>
+            <div class="reels">
+                <div class="reel" id="reel1">💻</div>
+                <div class="reel" id="reel2">🟢</div>
+                <div class="reel" id="reel3">🌙</div>
+            </div>
+        </div>
+
+        <!-- Message Display -->
+        <div class="message" id="message"></div>
+
+        <!-- Bet Controls -->
+        <div class="controls">
+            <div class="bet-controls">
+                <button class="bet-button" id="decrease-bet">−</button>
+                <span style="color: #FFD700; font-weight: bold; min-width: 80px;">Adjust Bet</span>
+                <button class="bet-button" id="increase-bet">+</button>
+            </div>
+        </div>
+
+        <!-- Main Button -->
+        <div class="controls">
+            <button id="spin-button">🎰 SPIN 🎰</button>
+        </div>
+
+        <!-- Reset Button -->
+        <div class="controls">
+            <button id="reset-button">↻ RESET GAME</button>
+        </div>
+
+        <!-- Legend -->
+        <div class="legend">
+            <div class="legend-title">AI BRAND SYMBOLS</div>
+            <div class="legend-items">
+                <div class="legend-item">💻 Copilot</div>
+                <div class="legend-item">🟢 ChatGPT</div>
+                <div class="legend-item">🌙 Claude</div>
+                <div class="legend-item">🔥 Mistral</div>
+                <div class="legend-item">💎 Gemini</div>
+                <div class="legend-item">❓ Perplexity</div>
+            </div>
+        </div>
+
+        <!-- Payout Table -->
+        <div class="payout-table">
+            <div class="payout-table-title">💸 PAYOUT TABLE</div>
+            <div class="payout-row">
+                <span>🎉 Jackpot (3 Match)</span>
+                <span style="color: #FFD700;">5x Bet</span>
+            </div>
+            <div class="payout-row">
+                <span>💰 Win (2 Match)</span>
+                <span style="color: #00FF00;">2x Bet</span>
+            </div>
+            <div class="payout-row">
+                <span>❌ Loss (No Match)</span>
+                <span style="color: #FF6B6B;">Lose Bet</span>
+            </div>
+        </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
